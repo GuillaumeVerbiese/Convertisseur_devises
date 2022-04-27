@@ -1,0 +1,17 @@
+/* Import d'un module scss : celui qui contient no variables */
+@use 'src/styles/vars';
+
+.header {
+  background-color: vars.$mainColor;
+  color: vars.$lightColor;
+  padding: 2 * vars.$gutter;
+
+  &-title {
+    font-weight: vars.$fwBold;
+    font-size: 2em;
+  }
+
+  &-amount {
+    margin-top: vars.$gutter;
+  }
+}
